@@ -1,0 +1,16 @@
+.mainNav-container>*:not(:first-child){
+    margin-left: 58px;
+    @include for-mobile-layout {
+        margin-left: 10px;
+      }
+    
+}
+
+.mainNav-container>*{
+    font-size: rem(16px);
+    cursor: pointer;
+    @include for-mobile-layout {
+        font-size: rem(12px);
+        
+      }
+}

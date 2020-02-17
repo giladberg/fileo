@@ -1,0 +1,26 @@
+header {
+  color: $clr2;
+  height: 100px;
+}
+
+.logo-container > *:not(:first-child) {
+  margin-left: 16px;
+}
+.logo-container > * {
+  @include for-mobile-layout {
+    max-width: 50px;
+  }
+}
+.logo {
+  @include for-mobile-layout {
+    width: 28px;
+    height: 23px;
+  }
+}
+.logoTitle {
+    @include for-mobile-layout {
+        width: 46px;
+        height: 24px;
+      }
+  
+}

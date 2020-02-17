@@ -1,0 +1,32 @@
+.section2-container{
+
+   max-width:1000px;
+   margin:0 auto;
+    .item-contaner{
+   
+   margin-top: 70px;     
+        color: $clr2;
+        text-align: center;
+
+        h3{
+            font-family: Raleway;
+            font-size: rem(20px);
+        }
+        p{
+            font-size: rem(14px);
+            max-width: 45ch;
+        }
+        &:nth-child(even){
+           
+            margin-left: 140px;
+            @include for-mobile-layout {
+                margin-left:0;
+              }
+        }
+    }
+    // .item-contaner::nth-child(odd) {
+    //     margin-left: 150px;
+    //     background-color: red;
+    // }
+}
+

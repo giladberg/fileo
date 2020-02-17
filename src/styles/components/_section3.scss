@@ -1,0 +1,37 @@
+.section3-container {
+  margin-top: 100px;
+  color: $clr2;
+
+  .rightSide {
+    padding-left: 50px;
+    h2 {
+      font-family: Raleway;
+      font-size: rem(40px);
+      max-width: 20ch;
+      line-height: 50px;
+      margin-bottom: 20px;
+      @include for-mobile-layout {
+          margin-top:30px;
+        font-size: rem(18px);
+        max-width: 50ch;
+      }
+    }
+    p{
+        font-size: rem(16px);
+        @include for-mobile-layout {
+            font-size: rem(14px);
+            max-width: 40ch;
+          }
+    }
+    a{
+        color:$clr3;
+        padding-bottom: 5px;
+        border-bottom:1px solid $clr3;
+        &::after{
+          
+            margin-left:5px;
+            content: url('../../images/Oval.png');
+        }
+    }
+  }
+}

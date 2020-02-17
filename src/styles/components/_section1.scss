@@ -1,0 +1,39 @@
+.section1-container {
+  margin-top: 75px;
+  color: $clr2;
+  text-align: center;
+  h2 {
+    font-size: rem(40px);
+
+    max-width: 30ch;
+
+    font-family: Raleway;
+    @include for-mobile-layout {
+      font-size: rem(24px);
+      max-width: 20ch;
+    }
+  }
+  p {
+    margin-top: 30px;
+    max-width: 30ch;
+  }
+  button {
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 280px;
+    height: 56px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 28px;
+    background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+  }
+}
+
+.ilustration-img {
+  @include for-mobile-layout {
+    width: 304px;
+    height: 225px;
+  }
+}
